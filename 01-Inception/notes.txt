@@ -1,0 +1,90 @@
+VS Code Extensions:-
+1. Bracket Paid Colrization
+2. ES7+ React/Redux
+3. Git Lens
+4. Prettier
+5. VScode Icons
+6. Better comments
+
+
+1.What is Emmet?
+Emmet uses different abbreviations and short expressions depending on what's passed, and then dynamically converts the abbreviations into the full code. Emmet is mostly used for HTML, XML, and CSS, but it can also be used with programming languages.
+
+2.Difference between a Library and Framework?
+    *Framework means that it's full fedged framework. When we build our app it's need a lot of things
+    -Routings
+    -Diffrent Route where we can go on some page
+    -And we have some diffrent component inside our app.
+    -Also if we say in one line  Framework is a set of prewritten code that provide a structure for developing
+    software application.
+
+    *Library 
+    A library, is a collection of pre-written code that can be used to perform specific tasks.
+    I.e Crousel in our website. 
+    For the Library
+    That takes minimum effort to just put it inside our code.
+    (ie just load that js library in your code and use it. Like jquery )
+
+3.What is CDN? Why do we use it?
+CDN is a content delivery network.
+CDNs cache content like web pages, images, and video in proxy servers near to your physical location. This allows you to do things like watch a movie, download software, check your bank balance, post on social media, or make purchases, without having to wait for content to load. You could think of a CDN like an ATM.
+Main goal of CDN is also to imporove a web performance  by reducing  the time needed to send content and rich media to users.
+
+4.Why React is known as React?
+React is known "React" because of it's core feature. which is it's ability to "react" or respond dynamically to change the data in the application.
+Reference:- https:www.quora.com/Why-is-React-called-React
+
+5.What is crossorigin in script tag?
+The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains. The resources may include Audio, Video, Images, Link or external script that specifies whether to support a cross-origin request or not.
+
+CORS: It stands for cross-origin resource sharing. It is a mechanism by which one webpage requests to another domain for fetching out the resource like audio, video, script, etc. from the third party server without leaking their credentials information.
+
+6.What is diference between React and ReactDOM
+React is core library, to designed for builder a better user interfeace. To use core development or react.
+ReactDOM-is used for the browser , DOM means web version of the react where you can intrect with DOM using ReactDOM.
+
+7.Difference between react development, and react production?
+-React development - only meant for development, and are not suitable for production.
+-React production  -  Minified and optimized production versions of React also size is lower then development.
+
+
+
+const heading = React.createElement("h1",null, "Namste Javascript");
+ React.createElement  react.element is nothign but an object.
+ React.createElement it will take 3 arguments
+ 1.html tag name
+ 2.html attributes (class, id, styles),
+ 3.and third childrenElement.
+console.log(heading);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log(root)
+
+createRoot- 
+ To tell the react this is the root element where i have to modify stomething
+
+root.render(heading);
+render is basically passing a react element inside the root.
+
+
+8.what is rel= stylesheet?
+The REL attribute is used to define the relationship between the linked file and the HTML document. REL=StyleSheet specifies a persistent or preferred style while REL="Alternate StyleSheet" defines an alternate style. A persistent style is one that is always applied when style sheets are enabled.
+A rel="stylesheet" attribute value specifies that the external link is a stylesheet that will be applied to the current page.
+This setting only applies to <link> tags.
+
+9.why style tag  should be in the head always?
+HTML is loaded and executed line by line. So, when you place stylesheets in <head> tags, the page is rendered and styled at the same time. Therefore, when the webpage loads, it looks and feels the way it is supposed to be.
+However, when stylesheets are linked at the bottom of the <body> tag, the bare minimum HTML is rendered first and then CSS styles are applied to it. This makes your page render two times:
+
+In the first render, only bare minimum HTML is loaded and rendered.
+In the second render, the style will be applied and the page is rendered again. This may make HTML elements to shift in size, shape, color and may make the webpage to flicker.
+To prevent this kind of behavior we should always place CSS <link> tags inside the <head> tag.
+Reference: https://www.hackinbits.com/interview-questions/html/why-link-tags-should-be-placed-inside-head-tag-in-html
+
+
+10. what is boilerplate code ?
+Boilerplate code, also known as boilerplate, is the part of code that has to be repeatedly in use with no or a little modification.
+
+11.What is async and defer? 
+Reference:-https://www.youtube.com/watch?v=IrHmpdORLu8&ab_channel=AkshaySaini
+And also check async-defer.html

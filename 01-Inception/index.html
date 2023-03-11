@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Inception</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="root">Not rendered</div>
+    
+    <!-- this is normal Javascript and below same thing in react -->
+    <!-- <script>
+        const heading = document.createElement("h1");
+
+        heading.innerHTML = "Namste Javascript";
+
+        const root = document.getElementById("root");
+
+        root.appendChild(heading);
+    </script> -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./App.js"></script>
+    <script>
+        //preivous codes
+        //const heading = React.createElement("h1",null, "Namste Javascript");
+        // React.createElement // react.element is nothign but an object.
+        // React.createElement it will take 3 arguments
+        // 1.html tag name
+        // 2.html attributes (class, id, styles),
+        // 3.and third childrenElement.
+        //console.log(heading);
+        
+        //const root = ReactDOM.createRoot(document.getElementById("root"));
+        //console.log(root)
+        
+        //createRoot- 
+        // To tell the react this is the root element where i have to modify stomething
+
+        //root.render(heading);
+        //render is basically passing a react element inside the root.
+
+
+
+    </script>
+</body>
+</html>

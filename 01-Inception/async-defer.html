@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="without-async-defer">
+            1. Without Async and defer script tag<br/>
+            "script src="*.js""
+            <div>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid #000;">
+                <span >HTML Parsing</span>  
+            </span>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid green;">
+                <span >Found a script tag<br>Pause the html parsing <br>fetching the js from network</span>  
+            </span>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid orange;">
+                <span >After fetched executing the javascript code till html parsing paused</span>  
+            </span>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid #000;">
+                <span>Once script executed after that HTML parsing continue/resume</span>  
+            </span>
+                
+        </div>
+        <br><br><br>
+        <div class="without-async-defer">
+            2. With async Asyncscript tag<br/>
+            "script src="*.js async"
+            <div>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid #000;">
+                <span >HTML Parsing</span>  
+            </span>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid #000;">
+                <span >Found a script tag <br>fetching the js from network <b>asynchronously</b>along with HTML PARSING</span>  
+            </span>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid orange;">
+                <span >As soon as scripts are fetched and avaliable in the browser HTML parsing will pause</span>  
+            </span>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid #000;">
+                <span>Once script executed after that HTML parsing continue/resume</span>  
+            </span>  
+        </div>
+        <br><br><br>
+        <div class="without-async-defer">
+            3. With defer  script tag<br/>
+            "script src="*.js defer"
+            <div>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid #000;">
+                <span >HTML Parsing</span>  
+            </span>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid #000;">
+                <span >Found a script tag <br>fetching the js from network <b>asynchronously</b>along with HTML PARSING</span>
+            </span>
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid #000;">
+                <span>HTML PArsing finished and script are avaliable in the broesers</span>  
+            </span> 
+            <span style="margin:0 10px; display: inline-block;border-bottom:4px solid orange;">
+                <span>Once HTML parsing completely done then fetched script will executed</span>  
+            </span>
+             
+        </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
