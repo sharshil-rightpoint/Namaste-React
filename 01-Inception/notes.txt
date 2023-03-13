@@ -87,4 +87,4 @@ Boilerplate code, also known as boilerplate, is the part of code that has to be 
 
 11.What is async and defer? 
 Reference:-https://www.youtube.com/watch?v=IrHmpdORLu8&ab_channel=AkshaySaini
-And also check async-defer.html
+And also check async-defer.html  
